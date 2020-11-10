@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id="header" >
+        <img src="./assests//Logo.svg" alt="Li.">
+        <div class="tabs" >
+            <a href="" >Work</a>
+            <a href="">About</a>
+            <a href="">Resume</a>
+            <a href="" class="btn" >Contact</a>
+        </div>
+        <div onclick="toggleMenu()">
+
+            <i id="bars"  class="fa fa-bars" ></i>
+        </div>
+    </nav>
+    <div id="mobile-menu" >
+        <ul>
+            <li>
+            <a href="" >Work</a>
+            </li>
+            <li>
+            <a href="" >About</a>
+            </li>
+            <li>
+            <a href="" >Resume</a>
+            </li>
+            <li>
+            <a href="" >Contact</a>
+            </li>
+        </ul>
+    </div>
+    <img id="illustration" src="./assests/illustration.png" alt="">
+    <div class="introduction">
+        <h1>Hello i am Jay</h1>
+        <p>Multifunctional designer/developer
+            based in Bath — a traditionally
+            trained designer who codes.</p>
+        <a href="" class="btn sm" >View work</a>
+    </div>
+    <img id="leftleaves" src="./assests/LeftLeaves.png" alt="">
+    <img id="rightleaves1" src="./assests/RightLeaves1.png" alt="">
+    <div class="content" >
+        <h2>Things I Do</h2>
+        <div class="strategy" >
+            <img src="./assests/thingsido.svg" alt="">
+            <div class="info" >
+                <h3>Strategy</h3>
+                <p>There’s no style over substance here. 
+                    I bring together form and the function to create something
+                    that looks good and performs brilliantly. Simple.</p>
+            </div>  
+        </div>     
+        <div class="strategy" >
+            <div class="info" >
+                <h3>Information Architecture</h3>
+                <p>It’s about organizing the content and flow of a website based on research and planning. Eventually 
+                    I come up with a structure/design that balances the users’ desires with the business’s needs.</p>
+                </div>  
+                <img src="./assests/writing.svg" alt="">
+        </div>     
+        <div class="strategy" >
+            <img src="./assests/pc.svg" alt="">
+            <div class="info" >
+                <h3>Design & Development</h3>
+                <p>As a designer and developer, I understand the perfect user interface should look good and work even better. Alongside my clients, I uncover problems and solve them. In short, I create bolder online experiences.</p>
+                </div>  
+        </div>     
+    </div>
+    <img id="leftleaves2" src="./assests/LeftLeaves2.png" alt="">
+    <div class="work" >
+        <h2>Recent Work</h2>
+        <div class="projects" >
+            <img src="./assests/Project1.svg" alt="">
+            <img class="up" src="./assests/Project2.svg" alt="">
+            <img src="./assests/Project3.svg" alt="">
+            <img class="up" src="./assests/Project4.svg" alt="">
+        </div>
+        <a class="btn" href="">View Work</a>
+    </div>
+    <img id="rightleaves2" src="./assests/Rightleaves.png" alt="">
+    <img id="illustration2" src="./assests/Contact Illustration.png" alt="">
+    <img id="leftleaves3" src="./assests/LeftLeaves.png" alt="">
+    
+    <div class="introduction contact">
+        <h1>Ready to make 
+            something amazing?</h1>
+        <a href="" class="btn sm" >Start A New Project</a>
+    </div>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header").style.background = "#fff";
+        } else {
+            document.getElementById("header").style.background = "transparent";
+        }
+        }
+        function toggleMenu(){
+            const menu = document.getElementById('mobile-menu')
+            if (menu.style.display == "none"){
+
+                menu.style.display = "block";
+            }else{
+                menu.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>

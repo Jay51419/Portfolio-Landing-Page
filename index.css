@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color:#2d2f2b;
+    display: inline-block;
+}
+p{
+    font-size: 14px;
+}
+h1{
+    font-size: 25px;
+}
+h2{
+    font-size: 20px;
+}
+.btn{
+    color: white;
+    padding:10px 30px;
+    background-color: #2d2f2b;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0px;
+}
+.btn:hover{
+    color: #38D39F;
+}
+.sm{
+    font-size: 14px;
+    padding:10px 20px;
+    text-align: center;
+
+}
+#bars{
+    display: none;
+}
+#illustration{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 95vh;
+    z-index: -20;
+}
+#mobile-menu{
+    position: absolute;
+    width: 80vw;
+    margin: 0 10vw;
+    position: fixed;
+    top: 80px;
+    display: none;
+}
+#mobile-menu ul{
+    list-style-type:none;
+}
+#mobile-menu li{
+    padding: 20px;
+    background-color: #2d2f2b;
+    border-bottom: 1px white solid;
+}
+#mobile-menu a{
+    color: #38D39F;
+}
+#mobile-menu a:hover{
+    color:white;
+}
+nav{
+    height: 80px;
+    max-width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    transition: background 0.5s;
+}
+.tabs a{
+    margin: 0 10px;
+}
+.introduction{
+    height: 70vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 10%;
+    padding-left: 40px;
+}
+.introduction h1{
+    margin-bottom: 20px;
+}
+.introduction a{
+    margin-bottom: 20px;
+    width: 30%;
+}
+.introduction p{
+    margin-bottom: 20px;
+}
+#leftleaves{
+    position: absolute;
+    top: 70vh;
+    left: 0;
+    height: 40%;
+}
+.content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+.content img{
+    height: 35vh;
+}
+.strategy{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;    
+    width: 30vw;
+}
+.info p{
+    margin-top: 20px;
+}
+#leftleaves2{
+    position: absolute;
+    top: 70*3vh;
+    left: 0;
+    height: 30%;
+    z-index: -20;
+}
+#leftleaves3{
+    position: absolute;
+    top: 400vh;
+    left: 0;
+    height: 30%;
+    z-index: -20;
+}
+.work{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    margin: 100px 0;
+    align-items: center;
+    flex-direction: column;
+}
+.work img{
+    height: 60vh;
+}
+.up{
+    margin-top: -20px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 10%;
+    margin: 80px  0;
+}
+
+#rightleaves1{
+    position: absolute;
+    top: 200vh;
+    right: 0;
+    height: 30%;
+    z-index: -20;
+}
+#rightleaves2{
+    position: absolute;
+    top: 300vh;
+    right: 0;
+    height: 30%;
+    z-index: -20;
+}
+.last{
+    height: 100vh;
+}
+.end{
+    height: 70vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 10%;
+    padding-left: 40px;
+}
+#illustration2{
+    position: absolute;
+    top: 5*100vh;
+    right: 0;
+    height: 95vh;
+    z-index: -20;
+}
+.contact{
+    width: 30%;
+    padding-top: 100px;
+}
+
+@media only screen and (max-width:800px){
+    *{
+        max-width: 100%;
+    }
+    #bars{
+        display: inline;
+    }
+    #illustration{
+        display: none;
+    }
+    #illustration2{
+        display: none;
+    }
+    .content img{
+        display: none;
+    }
+    .content h3{
+        margin-top: 70px;
+    }
+    .introduction{
+        width: 90%;
+        align-items: center;
+        margin: 0px;
+    }
+    .introduction p{
+        width: 60%;
+    }
+    .info{
+        width: 80%;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        margin-top: 150vh;
+    }
+    #leftleaves3{
+        top:550vh;
+        left: 0;
+    }
+    #leftleaves{
+        top:40vh
+    }
+    #leftleaves2{
+        top:270vh
+    }
+    #rightleaves1{
+        top:100vh
+    }
+    #rightleaves2{
+        top:400vh
+    }
+    .tabs{
+        display: none;
+    }
+    .end{
+        align-items: center;
+    }
+    .work{
+        align-items: center;
+    }
+}
